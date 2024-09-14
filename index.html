@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ติดต่อ, คำปรึกษา, ความเป็นส่วนตัว, บริการ, เว็บไซต์, ,มีเรื่องไร">
+    <title>มีเรื่องไร ไหนเล่า? เว็ปไซต์ให้คำปรึกษาสไตล์เพื่อน</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="main.css">
+    <style>
+        h2.welcome {
+            text-align: center;
+            font-size: 2.5em;
+            color: rgb(255, 101, 234);
+        }
+        p.welcome {
+            text-align: center;
+            font-size: 1.5em;
+            color: black;
+
+
+        }
+
+        /* สไตล์ของชื่อเว็บไซต์ */
+.name {
+    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* เงาของข้อความ */
+    animation: pulse 1.5s infinite; /* อนิเมชันการกระเพื่อม */
+    margin: 20px; /* ช่องว่างรอบข้อความ */
+}
+
+/* อนิเมชันการกระเพื่อม */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* สไตล์ของลิงก์ในเมนู */
+.nav-link {
+    color: #fff; /* สีของลิงก์ */
+    text-decoration: none; /* ไม่มีเส้นขีดใต้เริ่มต้น */
+    font-size: 1em; /* ขนาดของลิงก์ */
+    transition: text-decoration 0.3s ease; /* การเปลี่ยนแปลงการขีดเส้นใต้ */
+}
+
+/* เมื่อเมาส์ชี้ไปที่ลิงก์ */
+.nav-link:hover {
+    text-decoration: underline; /* ขีดเส้นใต้เมื่อ hover */
+    text-underline-position: under; /* ตำแหน่งเส้นขีดใต้ */
+}
+
+    </style>
+</head>
+<body>
+    <header>
+    
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <h1 class="name">มีเรื่องไร ไหนเล่า?</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2 class="welcome"> ยินดีต้อนรับสู่เว็ปไซต์ให้คำปรึกษา "มีเรื่องไร ไหนเล่า?"</h2>
+            <p class="welcome"> คุณดูเครียดๆนะ เล่าให้เราฟังได้ไหม? เราสัญญาว่าจะเก็บมันเป็นความลับ</p>
+    
+    <section id="message-boxes">
+        <div class="message-box">
+            <h3><a href="https://discord.gg/nJZuAsaX">Discord</a></h3>
+        </div>
+    </section>
+
+    <section id="clock-section">
+        <p id="date-time"></p>
+    </section>
+
+    <footer>
+        <p>กลุ่มผู้จัดทำ นักเรียนโรงเรียนสภารานี จังหวัดตรัง</p>
+    </footer>
+    
+
+
+</body>
+</html>

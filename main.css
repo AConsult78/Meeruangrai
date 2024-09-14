@@ -1,0 +1,222 @@
+/* main.css */
+
+/* นำเข้าฟอนต์ "วาฬ" */
+@font-face {
+    font-family: 'Whale';
+    src: url('...fonts/Whale.ttf') format('truetype');
+}
+
+/* Global Styles */
+body {
+    font-family: 'Whale', sans-serif;
+    background: #e6e6fa;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(164, 65, 188, 0.9);
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-out;
+    font-size: 2em;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; /* ไม่มีเส้นขีดใต้จาก text-decoration */
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid white; /* เส้นขีดใต้ที่ต้องการ */
+}
+
+main {
+    padding: 1em;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 1.5em;
+    flex-grow: 1;
+    margin-bottom: 3em;
+}
+
+/* เพิ่มสไตล์โลโก้ใน header */
+header .logo {
+    position: absolute;
+    top: -2em;
+    left: -0.7em;
+    width: 170px; /* ปรับขนาดโลโก้ตามต้องการ */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* เพิ่มสไตล์สำหรับนาฬิกาและวันที่ใน main */
+#clock-section {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    border-radius: 5px;
+    padding: 0.5em;
+    z-index: 1000;
+}
+
+#date-time {
+    font-size: 1em;
+    color: #f9dfff;
+    font-weight: bold;
+}
+
+section#home, section#login {
+    color: #000;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.5em;
+    position: relative;
+}
+
+form label {
+    display: block;
+    margin: 0.5em 0 0.2em;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+button {
+    background-color: #87CEFA;
+    color: white;
+    border: none;
+    padding: 0.2em 0.6em;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 0.8em;
+}
+
+button:hover {
+    background-color: #add8e6;
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: rgba(186, 85, 211, 0.9);
+    color: #4B0082;
+    text-align: center;
+    padding: 0.115em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1.25em;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 1em;
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        font-size: 1.2em;
+    }
+
+    form {
+        padding: 1em;
+    }
+
+    button {
+        padding: 0.2em 0.5em;
+        font-size: 0.7em;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
+
+/* Transition effects */
+.page-transition {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+.hide {
+    opacity: 0;
+}
+
+.rainbow-text {
+    background: linear-gradient(to right, rgb(255, 0, 255), rgb(149, 0, 255), rgb(57, 57, 255), rgb(65, 255, 65), yellow, rgb(255, 143, 38), rgb(255, 45, 45));
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    color: transparent;
+    font-size: 2em; /* Adjust font size as needed */
+    font-weight: bold; /* Optional: Makes text bold */
+    background-size: 300% 100%; /* Larger size for smoother animation */
+    animation: rainbow 6s linear infinite;
+}
+

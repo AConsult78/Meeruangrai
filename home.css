@@ -1,0 +1,84 @@
+/* homepage.css */
+
+/* สไตล์สำหรับหน้าหลัก */
+
+header {
+    background-color: rgba(186, 85, 211, 0.9);
+    color: white;
+    padding: 0.7em; /* ปรับค่า padding ตามที่ต้องการ */
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1s ease-out;
+    font-size: 2em;
+}
+
+/* สไตล์สำหรับหน้าหลัก */
+
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: auto;
+    font-size: 1.5em;
+}
+
+section#homepage {
+    text-align: center;
+}
+
+#welcome-message {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+#login-message {
+    color: #d9534f;
+}
+
+/* Transition effects */
+.page-transition {
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.page-transition.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* styles/home.css */
+
+/* สไตล์สำหรับกรอบข้อความ */
+/* สไตล์สำหรับกรอบข้อความ */
+.message-box {
+    background-color: #f8f9fa; /* สีพื้นหลังที่อ่อนลงเพื่อให้ดูสบายตา */
+    padding: 2em; /* ปรับช่องว่างภายในกรอบ */
+    border: 1px solid #ccc; /* ขอบสีเทาอ่อน */
+    border-radius: 12px; /* มุมโค้งมนเล็กน้อย */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* เงาที่ดูชัดเจนขึ้น */
+    margin:0 auto; /* ช่องว่างรอบกรอบข้อความ */
+    width: 150px; /* ความกว้างของกล่อง */
+    height: 150px; /* ความสูงของกล่อง ทำให้เป็นสี่เหลี่ยมจัตุรัส */
+    display: flex;
+    align-items: center; /* จัดข้อความให้อยู่กลางกล่องในแนวตั้ง */
+    justify-content: center; /* จัดข้อความให้อยู่กลางกล่องในแนวนอน */
+    text-align: center;
+}
+
+/* สไตล์ของ <h3> ภายในกรอบ */
+.message-box h3 {
+    margin: 0;
+    font-size: 1.5em; /* ปรับขนาดตัวอักษร */
+    color: #333; /* สีข้อความ */
+}
+
+/* สไตล์ของลิงก์ภายในกรอบ */
+.message-box a {
+    color: #2d55b3; /* สีของลิงก์ให้ดูสดใส */
+    text-decoration: none;
+    font-size: 1.7em;
+}
+
+.message-box a:hover {
+    text-decoration: underline; /* เส้นขีดใต้เมื่อ hover */
+}
